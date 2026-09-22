@@ -7,6 +7,7 @@ class UIElement:
         self.type = item["type"]
         self.rect = pygame.Rect(item["x"], item["y"], item["w"], item["h"])
         self.bg_color = item.get("bg_color")
+        self.offset = item.get("offset", [0, 0])
         self.on_click = None  # Користувач призначить сюди функцію
 
         # Створюємо шрифт та Surface для тексту
@@ -59,4 +60,15 @@ def draw(ui_data, events, screen):
     for el in ui_data.elements.values():
         if el.bg_color:
             pygame.draw.rect(screen, el.bg_color, el.rect)
-        screen.blit(el.surface, (el.rect.x, el.rect.y))
+
+        button_center_x = el.rect.x + el.rect.w / 2
+        button_center_y = el.rect.y + el.rect.h / 2
+
+        text_rect = el.surface.get_rect(
+            center=(
+                button_center_x + el.offset[0],
+                button_center_y + el.offset[1]
+            )
+        )
+
+        screen.blit(el.surface, text_rect)

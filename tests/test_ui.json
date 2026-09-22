@@ -1,35 +1,84 @@
 {
   "window": {
-    "title": "Тестове вікно користувача",
-    "width": 800,
-    "height": 600
+    "title": "PygameDesigner",
+    "width": 1000,
+    "height": 650
   },
   "elements": [
     {
       "id_name": "main_title",
       "type": "text",
       "x": 250,
-      "y": 50,
-      "w": 300,
-      "h": 50,
+      "y": 110,
+      "w": 500,
+      "h": 60,
       "text": "Привіт з PygameDesigner!",
       "font_name": "Arial",
-      "font_size": 28,
+      "font_size": 38,
       "text_color": [255, 255, 255, 255],
       "bg_color": null
     },
     {
-      "id_name": "click_me_btn",
-      "type": "button",
-      "x": 325,
-      "y": 250,
-      "w": 150,
-      "h": 50,
-      "text": "Натисни мене",
+      "id_name": "subtitle",
+      "type": "text",
+      "x": 250,
+      "y": 175,
+      "w": 500,
+      "h": 40,
+      "text": "Створюй красиві інтерфейси легко",
       "font_name": "Arial",
       "font_size": 20,
+      "text_color": [160, 170, 185, 255],
+      "bg_color": null
+    },
+    {
+      "id_name": "card",
+      "type": "panel",
+      "x": 250,
+      "y": 250,
+      "w": 500,
+      "h": 220,
+      "bg_color": [30, 34, 45, 255]
+    },
+    {
+      "id_name": "card_title",
+      "type": "text",
+      "x": 300,
+      "y": 285,
+      "w": 400,
+      "h": 40,
+      "text": "Ласкаво просимо!",
+      "font_name": "Arial",
+      "font_size": 26,
       "text_color": [255, 255, 255, 255],
-      "bg_color": [100, 200, 100, 255]
+      "bg_color": null
+    },
+    {
+      "id_name": "card_text",
+      "type": "text",
+      "x": 300,
+      "y": 330,
+      "w": 400,
+      "h": 50,
+      "text": "Твій перший інтерфейс вже готовий.",
+      "font_name": "Arial",
+      "font_size": 18,
+      "text_color": [170, 180, 195, 255],
+      "bg_color": null
+    },
+    {
+    "id_name": "click_me_btn",
+    "type": "button",
+    "x": 400,
+    "y": 395,
+    "w": 200,
+    "h": 50,
+    "text": "Почати",
+    "font_name": "Arial",
+    "font_size": 20,
+    "text_color": [255, 255, 255, 255],
+    "bg_color": [90, 110, 240, 255],
+    "offset": [0, 0]
     }
   ]
 }

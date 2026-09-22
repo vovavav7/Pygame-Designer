@@ -1,0 +1,35 @@
+{
+  "window": {
+    "title": "Тестове вікно користувача",
+    "width": 800,
+    "height": 600
+  },
+  "elements": [
+    {
+      "id_name": "main_title",
+      "type": "text",
+      "x": 250,
+      "y": 50,
+      "w": 300,
+      "h": 50,
+      "text": "Привіт з PygameDesigner!",
+      "font_name": "Arial",
+      "font_size": 28,
+      "text_color": [255, 255, 255, 255],
+      "bg_color": null
+    },
+    {
+      "id_name": "click_me_btn",
+      "type": "button",
+      "x": 325,
+      "y": 250,
+      "w": 150,
+      "h": 50,
+      "text": "Натисни мене",
+      "font_name": "Arial",
+      "font_size": 20,
+      "text_color": [255, 255, 255, 255],
+      "bg_color": [100, 200, 100, 255]
+    }
+  ]
+}

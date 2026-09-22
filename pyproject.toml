@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PygameDesigner"
+version = "0.1.0"
+description = "JSON-based visual interface builder for Pygame"
+requires-python = ">=3.8"
+dependencies = [
+    "pygame>=2.0.0"
+]
+
+[project.scripts]
+PygameDesigner = "PygameDesigner.editor:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
